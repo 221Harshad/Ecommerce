@@ -5,6 +5,7 @@ import { Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { add } from "../store/cartSlice";
 import { getProducts } from "../store/productSlice";
+import './Navbar.css'
 import { Alert } from "react-bootstrap";
 const Product = () => {
   const dispatch = useDispatch();
@@ -39,8 +40,8 @@ const Product = () => {
           <Card.Text>INR: {product.price}</Card.Text>
         </Card.Body>
 
-        <Card.Footer style={{ backgroundColor: "white" }}>
-          <Button variant="primary" onClick={() => addTocart(product)}>
+        <Card.Footer style={{ backgroundColor: "white" , color:"white" }}>
+          <Button className="btn" onClick={() => addTocart(product)}>
             Add To Cart
           </Button>
         </Card.Footer>
@@ -49,7 +50,7 @@ const Product = () => {
   ));
   return (
     <>
-      <div>Product Dashboard</div>
+      <div className="heading">Product Dashboard</div>
       {/* <pre>{JSON.stringify(Product, undefined, 2)}</pre> */}
       <div className="row">{cards}</div>
     </>

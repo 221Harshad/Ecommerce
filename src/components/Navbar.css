@@ -1,0 +1,30 @@
+.color{
+    background-color: rgb(246, 246, 249);
+    
+}
+.heading{
+   color: black;
+   font-size: 30px;
+   font-weight: bolder;
+   box-shadow: inset;
+   background-color: rgb(233, 234, 221);
+   text-shadow: 2px 2px 4px #000;
+   line-height: 1.5;
+   letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.row{
+    background-color: rgb(237, 237, 237);
+}
+.header{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #f04848;
+    letter-spacing: 1px;
+    
+}
+.btn{
+    background-color: rgb(22, 22, 19);
+    color: yellow;
+}
